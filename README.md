@@ -10,3 +10,5 @@ that they won't change until you defocus the text field.
 
 If you just want to add to cities.txt without deploying this on your
 server, check out [the hosted version](http://mattwigway.github.com/extractocity/citymaker.html).
+
+Thanks to Mike Migurski for providing Extractotron in the first place.
