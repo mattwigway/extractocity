@@ -1,3 +1,8 @@
+config = {
+    // set this to your GeoNames User ID!
+    geonamesUser: null
+}
+
 $(document).ready(function () {
     var projections = {
         data: new OpenLayers.Projection('EPSG:4326'),
@@ -60,7 +65,7 @@ $(document).ready(function () {
             maxRows: 20,
             // tighter matches
             isNameRequired: true,
-            username: 'mattwigway'
+            username: config.geonamesUser
         };
         
         $.ajax({
