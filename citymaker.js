@@ -1,6 +1,6 @@
 config = {
     // set this to your GeoNames User ID!
-    geonamesUser: null
+    geonamesUser: 'mattwigway'
 }
 
 $(document).ready(function () {
