@@ -21,6 +21,10 @@ $(document).ready(function () {
     };
 
     var updateOutput = function () {
+        state.group = $('#region').val();
+        state.slug = $('#slug').val();
+        state.name = $('#name').val();
+
         $('#line').text(state.group + '	' + state.geonameid + '	' + state.top + '	' + state.left + '	' + state.bottom + 
                     '	' + state.right + '	' + state.slug + '	' + state.name);
     }
@@ -97,17 +101,14 @@ $(document).ready(function () {
     });
 
     $('#name').change(function (e) {
-        state.name = $('#name').val();
         updateOutput();
     });
 
     $('#slug').change(function (e) {
-        state.slug = $('#slug').val();
         updateOutput();
     });
 
     $('#region').change(function (e) {
-        state.group = $('#region').val();
         updateOutput();
     });
 });                    
