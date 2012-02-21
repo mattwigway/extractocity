@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Extractotron Citymaker</title>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="citymaker.js"></script>
+  </head>
+  <body>
+    <div id="searchBox" style="position: fixed; top: 0px; left: 0px; border: 1px solid #000; z-index: 1500; background-color: #fff; display: none">
+      <b>Search Results</b>
+      <ul></ul>
+    </div>
+    <div id="map" style="width: 100%; height: 100%"></div>
+    <div id="output" style="position: fixed; bottom: 0px; right: 0px; z-index: 1500; background-color: #fff">
+      <table>
+        <tr><td><label for="searchText">search</label></td><td><label for="region">region</label></td><td><label for="slug">slug</label></td>
+          <td><label for="name">name</label></td></tr>
+        <tr>
+          <td>
+            <form id="search">
+              <input id="searchText" type="text" size="50" />
+            </form>
+          </td>
+          <td>
+            <select id="region">
+              <option>Africa</option>
+              <option>Asia</option>
+              <option>Europe</option>
+              <option>Middle East</option>
+              <option>North America</option>
+              <option>Oceania</option>
+              <option>South America</option>
+            </select>
+          </td>
+          <td>
+            <input id="slug" type="text" />
+          </td>
+          <td>
+            <input id="name" type="text" />
+          </td>
+        </tr>
+      </table>
+      <br/>
+          
+      Line for cities.txt:
+      <pre id="line"></pre>
+    </div>
+  </body>
+</html>
